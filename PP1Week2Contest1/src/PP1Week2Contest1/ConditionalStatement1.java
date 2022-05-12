@@ -7,7 +7,7 @@ public class ConditionalStatement1 {
         Scanner sc = new Scanner (System.in);
         int a = sc.nextInt();
 
-        if (a<5)
+        if (a<10)
         {
             System.out.println(a ^ 2 - 3 * a + 4);
         }
