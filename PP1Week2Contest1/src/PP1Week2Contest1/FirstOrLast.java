@@ -7,7 +7,6 @@ public class FirstOrLast {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int hundreds = a / 100 % 10;
-        int tens = a / 10 % 10;
         int ones = a % 10;
         if (ones > hundreds ){
             System.out.println(ones);

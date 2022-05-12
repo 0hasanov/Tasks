@@ -10,13 +10,13 @@ public class LazyMisha {
         int t3 = sc.nextInt();
 
         if (t1 <= t2 && t1 <= t3) {
-            System.out.println("min :" + t1);
+            System.out.println(t1);
         }
         else if (t2 <= t3 && t2 <= t1) {
-            System.out.println("min :" + t2);
+            System.out.println(t2);
         }
         else {
-            System.out.println("min :" + t3);
+            System.out.println(t3);
         }
 
 

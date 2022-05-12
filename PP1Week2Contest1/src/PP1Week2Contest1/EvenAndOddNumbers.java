@@ -10,13 +10,13 @@ public class EvenAndOddNumbers {
         int c = sc.nextInt();
 
         if (a % 2 != 0 && b % 2 !=0 && c % 2 !=0 ) {
-            System.out.println("No");
+            System.out.println("NO");
         }
         else if (a % 2 == 0 && b % 2 ==0 && c % 2 ==0 ) {
-            System.out.println("No");
+            System.out.println("NO");
         }
         else {
-            System.out.println("Yes");
+            System.out.println("YES");
         }
 
         }
