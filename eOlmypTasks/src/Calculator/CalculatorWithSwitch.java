@@ -12,8 +12,8 @@ public class CalculatorWithSwitch {
             case '+': {
                 System.out.println(number1 + number2);
                 break;
-            }
 
+            }
             case '-': {
                 System.out.println(number1 - number2);
                 break;
