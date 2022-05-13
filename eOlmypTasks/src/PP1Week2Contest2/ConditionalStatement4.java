@@ -5,13 +5,11 @@ import java.util.Scanner;
 public class ConditionalStatement4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
+        double x = sc.nextDouble();
 
-        if (x >=0) {
-            System.out.println(Math.pow(x,3)+ 2*x*x + 4*x -6);
-        }
-        else if (x<0) {
-            System.out.println(Math.pow(x,3)-7*x);
+
+        x= x >= 0 ? Math.pow(x,3)+ 2*x*x + 4*x -6 : Math.pow(x,3)-7*x ;
+        int y = (int) x;
+        System.out.println(y);
         }
     }
-}
