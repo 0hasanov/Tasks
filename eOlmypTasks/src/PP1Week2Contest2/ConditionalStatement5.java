@@ -8,7 +8,7 @@ public class ConditionalStatement5 {
         double x = sc.nextDouble();
 //        if (x>=13) {
 //            int y = (int) x;
-//            System.out.println(Math.pow(x,3) * 3 + Math.pow(x,2) * 4 + 5*x + 6);
+//            System.out.println(y + Math.pow(x,3) * 3 + Math.pow(x,2) * 4 + 5*x + 6);
 //        }
 //        else if (x<13) {
 //            int y = (int) x;
