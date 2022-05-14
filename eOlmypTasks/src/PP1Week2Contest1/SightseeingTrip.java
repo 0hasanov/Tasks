@@ -8,8 +8,14 @@ public class SightseeingTrip {
         int n = sc.nextInt();
         int m = sc.nextInt();
         int k = sc.nextInt();
-        int nroom = n/k;
-        int mroom = m/k;
-        System.out.println(nroom+mroom);
+        if (n%k == 0 && m%k == 0) {
+            System.out.println(n / k + m / k);
+        }
+        else if (n%k!=0 && m%k!=0){
+            System.out.println(n / k + m / k + 2);
+        }
+        else {
+            System.out.println(n / k + m / k + 1);
+        }
     }
 }
