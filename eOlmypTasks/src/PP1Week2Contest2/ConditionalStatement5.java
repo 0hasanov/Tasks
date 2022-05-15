@@ -19,4 +19,3 @@ public class ConditionalStatement5 {
        System.out.println(y);
     }
 }
-

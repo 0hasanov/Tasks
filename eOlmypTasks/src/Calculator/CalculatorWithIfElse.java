@@ -8,6 +8,7 @@ public class CalculatorWithIfElse {
         int number1 = sc.nextInt();
         char op = sc.next().charAt(0); //?
         int number2 = sc.nextInt();
+
         if (op == '+') {
             System.out.println(number1 + number2);
         } else if (op == '-') {
@@ -16,7 +17,6 @@ public class CalculatorWithIfElse {
             System.out.println(number1 + number2);
         } else if (op == '/') {
             System.out.println(number1 + number2);
-
         }
     }
 }

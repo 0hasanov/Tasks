@@ -6,7 +6,7 @@ public class DivisibilityByDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        int firstdigit  = a /1000 %10;
+        int firstdigit  = a /1000;
         int seconddigit = a /100 %10;
         int thirddigit = a /10 %10;
         int fourthdigit = a  % 10;
