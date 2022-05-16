@@ -1,4 +1,4 @@
-package warmups;
+package Warmups;
 public class warmup {
     public static void main(String[] args) {
  /*       char[] ch={'j','a','v','a','t','p','o','i','n','t'};
