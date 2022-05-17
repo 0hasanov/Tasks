@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class LoopExercise1 {
     public static void main(String[] args) {
-        int a, i, number;
+        int a;
+        int i;
+        int number;
         Scanner scan = new Scanner(System.in);
 
         System.out.print("Enter the Value of n: ");
