@@ -1,6 +1,5 @@
 package pp1Week3Contest1;
 
-import java.util.Collections;
 import java.util.Scanner;
 
 public class squareandkub {
@@ -15,9 +14,9 @@ public class squareandkub {
 
         for (; a <= b; a++) {
             square = a * a;
+            cube = a * a * a;
             System.out.print(square + "\t");
-            cube =  a * a * a;
-            System.out.println(cube + "\t");
+            System.out.print(cube + "\t");
         }
     }
 }
