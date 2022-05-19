@@ -9,12 +9,10 @@ public class SumOfSomeRealNumbers {
         double n2 = sc.nextDouble();
         double n3 = sc.nextDouble();
         double n4 = sc.nextDouble();
-        double sum1= n1 + n2;
-        double sum2 = n1 + n2+n3;
+        double sum1 = n1 + n2;
+        double sum2 = n1 + n2 + n3;
         double sum3 = n1 + n2 + n3 + n4;
-        System.out.printf("%.4f",sum1);
-        System.out.printf("%.4f",sum2);
-        System.out.printf("%.4f",sum3);
+        System.out.printf("%.4f  %.4f  %.4f", sum1 , sum2 , sum3);
 
 
     }

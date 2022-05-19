@@ -9,7 +9,8 @@ public class StandInOrder {
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
 
+
         for (i = 1; i <= n; i++)
-            System.out.println(i);
+            System.out.print(i + "\t");
     }
 }
