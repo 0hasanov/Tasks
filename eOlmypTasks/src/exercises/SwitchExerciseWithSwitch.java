@@ -5,28 +5,49 @@ import java.util.Scanner;
 public class SwitchExerciseWithSwitch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the number: ");
         String str = sc.next();
 
         switch (str) {
-            case "Suspenso":
-                System.out.println("0,1,2,3,4");
+            case "0" :
+                System.out.println("Suspenso");
+                break;
+            case "1" :
+                System.out.println("Suspenso");
+                break;
+            case "2" :
+                System.out.println("Suspenso");
+                break;
+            case "3" :
+                System.out.println("Suspenso");
+                break;
+            case "4" :
+                System.out.println("Suspenso");
                 break;
 
-            case "Aprobado":
-                System.out.println("5");
+
+            case "5":
+                System.out.println("Aprobado");
                 break;
 
-            case "Bien":
-                System.out.println("6");
+            case "6":
+                System.out.println("Bien");
                 break;
 
-            case "Notable":
-                System.out.println("7,8");
+            case "7":
+                System.out.println("Notable");
+                break;
+            case "8":
+                System.out.println("Notable");
                 break;
 
-            case "Sobresaliente":
-                System.out.println("9,10");
+            case "9":
+                System.out.println("Sobresaliente");
                 break;
+            case "10":
+                System.out.println("Sobresaliente");
+                break;
+
         }
     }
 }
