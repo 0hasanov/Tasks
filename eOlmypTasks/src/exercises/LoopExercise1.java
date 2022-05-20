@@ -15,11 +15,11 @@ public class LoopExercise1 {
         for (i = 0; i < a; i++) {
             number = scan.nextInt();
             System.out.println(number);
-            if (a > 0) {
+            if (number > 0) {
                 System.out.println(number + " is positive");
-            } else if (a < 0) {
+            } else if (number < 0) {
                 System.out.println(number + " is negative");
-            } else if (a == 0) {
+            } else if (number == 0) {
 
                 System.out.println(number + " is zero");
             }
