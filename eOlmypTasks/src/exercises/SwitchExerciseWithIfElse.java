@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class SwitchExerciseWithIfElse {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Please enter the number: ");
         int a = sc.nextInt();
         if (a == 0 || a == 1 || a == 2 || a == 3 || a == 4) {
             System.out.println("Suspenso");
