@@ -1,6 +1,5 @@
 package exercises;
 
-import java.util.Scanner;
 
 public class LoopExercies2 {
     public static void main(String[] args) {
