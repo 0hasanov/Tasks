@@ -9,7 +9,7 @@ public class LoopExercise1 {
         int number;
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Enter the Value of n: ");
+        System.out.print("Enter the Value of a: ");
         a = scan.nextInt();
         System.out.print("Enter " + a + " Numbers: ");
         for (i = 0; i < a; i++) {
