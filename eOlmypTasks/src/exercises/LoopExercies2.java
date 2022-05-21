@@ -9,7 +9,6 @@ public class LoopExercies2 {
             int seconddigit = i / 100 % 10;
             int thirddigit = i / 10 % 10;
             int lastdigit = i % 10;
-            int sum = 0;
             int sumoffirsttwo = firstdigit + seconddigit;
             int sumoflasttwo = thirddigit + lastdigit;
 
