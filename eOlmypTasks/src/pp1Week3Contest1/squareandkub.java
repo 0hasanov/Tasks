@@ -7,6 +7,7 @@ public class squareandkub {
         Scanner sc = new Scanner(System.in);
 
         int a = sc.nextInt();
+
         int b = sc.nextInt();
 
         int square;
@@ -15,8 +16,8 @@ public class squareandkub {
         for (; a <= b; a++) {
             square = a * a;
             cube = a * a * a;
-            System.out.print(square + "\t");
-            System.out.print(cube + "\t");
+            System.out.print(square + " ");
+            System.out.print(cube + " ");
         }
     }
 }
