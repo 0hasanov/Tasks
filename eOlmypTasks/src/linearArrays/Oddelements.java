@@ -14,7 +14,7 @@ public class Oddelements {
         }
         for (int i = 0; i < n; i++) {
             if (arr[i] % 2!= 0) {
-                System.out.print(arr[i] + "\t");
+                System.out.print(arr[i] + " ");
 
             }
         }

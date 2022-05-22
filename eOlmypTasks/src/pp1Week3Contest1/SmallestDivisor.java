@@ -8,13 +8,13 @@ public class SmallestDivisor {
 
         int number = sc.nextInt();
 
-        for (int i = 2; i <= Math.sqrt(Math.sqrt(number)); i++ ) {
+        for (int i = 2; i <= Math.sqrt(number); i++ ) {
             if(number % i == 0){
                 System.out.print(i + " ");
             }
         }
 
-        for (int i = 2; i >= Math.sqrt(Math.sqrt(number)); i--) {
+        for (int i = 2; i >= Math.sqrt(number); i--) {
             if(number % i == 0){
                 System.out.print(number / i + " ");
             }

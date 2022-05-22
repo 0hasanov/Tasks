@@ -2,26 +2,14 @@ package pp1Week3Contest1;
 
 import java.util.Scanner;
 
-public class Watermelons {
+public class FindMinimumSout {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
-
             arr[i] = sc.nextInt();
-
         }
-        for (int number : arr) {
-            if (arr.length == 1) {
-                System.out.println("Ooops !");
-
-                break;
-
-            }
-
-        }
-
         int min = arr[0];
         for (int number : arr) {
             if (number < min) {
@@ -36,6 +24,6 @@ public class Watermelons {
 
         }
 
-        System.out.println(min + " " + max);
+        System.out.println(max - min);
     }
 }
