@@ -7,8 +7,8 @@ public class Animals {
         Cat Alf = new Cat();
         Alf.name = "Alf";
         System.out.println(Alf.name);
-        Alf.meowing() = new Alf.meowing();
-        Alf.meowing() = "Alf is meowing";
+       // Alf.meowing() = new Alf.meowing();
+        //Alf.meowing() = "Alf is meowing";
 
 
 
