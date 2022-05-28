@@ -13,7 +13,7 @@ public class ModularExponentiation {
         long z = 1;
 
         for (int i = 1; i <= n; i++)
-            z = (z * x) % m;
+            z = (x * z) % m;
 
         System.out.println(z);
 
