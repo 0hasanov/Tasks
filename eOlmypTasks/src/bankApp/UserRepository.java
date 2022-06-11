@@ -6,38 +6,40 @@ public class UserRepository {
 
     //private static int count = 0;
     //public static User[] users = new User[100];
-    public static User [] users = {};
+    public static User[] users = {};
 
-    public static void addUser(User user){
+    public static void addUser(User user) {
         //users[count] = user;
         //count++;
-        User [] newUsers = Arrays.copyOf(users,users.length+1);
+        User[] newUsers = Arrays.copyOf(users, users.length + 1);
         newUsers[users.length] = user;
-        users= newUsers;
+        users = newUsers;
         System.out.println("New user added");
     }
 
-    public static void update(User user,int index ){
-        if(index <0 || index >=users.length){
+    public static void update(User user, int index) {
+        if (index < 0 || index >= users.length) {
             System.out.println("User don't found!");
-        }
-        else {
-            users[index]=user;
+        } else {
+            users[index] = user;
         }
         System.out.println("Updated changes");
     }
-     public static void delete (User user,int index){
-        if (index >=0 && index < users.length ){
-            User [] users = new User[users.length-1];
+
+    public static void delete(User user, int index) {
+        if (index >= 0 && index < users.length) {
+            User[] users = new User[users.length - 1];
 
             for (int i = 0, j = 0; i < users.length; i++) {
-                if (index != i) users[j++] = users[i];
+                if (index != i) {
+                    users[j++] = users[i];
+                }
             }
 
             users[index] = user;
 
         }
-         System.out.println("Account deleted succesfully");
-     }
+        System.out.println("Account deleted succesfully");
+    }
 
 }
