@@ -10,6 +10,10 @@ public class User {
     private String password;
     private short age;
 
+    public User(){
+
+    }
+
     public User(String username, String password){
 
     }

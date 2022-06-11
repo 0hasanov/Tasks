@@ -12,7 +12,7 @@ public class Function_10 {
             System.out.println("1");
         }
         else if (m<n && 0 < m && 0 < n ){
-            System.out.println((m-1) +(n-1));
+            //System.out.println(function(m-1,n-1) +function(m,n-1));
         }
     }
 }
