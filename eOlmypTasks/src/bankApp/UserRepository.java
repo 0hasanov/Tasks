@@ -28,10 +28,14 @@ public class UserRepository {
     }
      public static void delete (User user,int index){
         if (index >=0 && index < users.length ){
-            System.out.println("User don't found!");
-        }
-        else {
+            User [] users = new User[users.length-1];
+
+            for (int i = 0, j = 0; i < users.length; i++) {
+                if (index != i) users[j++] = users[i];
+            }
+
             users[index] = user;
+
         }
          System.out.println("Account deleted succesfully");
      }
