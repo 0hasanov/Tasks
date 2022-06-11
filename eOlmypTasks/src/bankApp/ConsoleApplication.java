@@ -68,9 +68,9 @@ public class ConsoleApplication {
 
                                 }
 
-                               // else if (ch.equalsIgnoreCase("Delete") || ch.equals("2")){
-                                 //   UserRepository.delete(users[i]);
-                                //}
+                                else if (ch.equalsIgnoreCase("Delete") || ch.equals("2")){
+                                    UserRepository.delete(users[i] ,i);
+                                }
 
                                 else if (ch.equalsIgnoreCase("Exit") || ch.equals("3")) {
                                     System.out.println("You exit successfully!");
