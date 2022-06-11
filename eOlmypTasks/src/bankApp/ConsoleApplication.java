@@ -7,6 +7,7 @@ public class ConsoleApplication {
     public static void run() {
         Scanner sc = new Scanner(System.in);
 
+        boolean choises = false;
         String input = "";
 
         while (true) {
@@ -39,64 +40,79 @@ public class ConsoleApplication {
                 for (int i = 0; i < users.length; i++) {
                     if (users[i] != null) {
                         if (users[i].getUsername().equals(username) && users[i].getPassword().equals(password)) {
-                            System.out.printf("Welcome %s %s\n\n", users[i].getName(), users[i].getSurname());
+                            choises = true;
+
+                            // System.out.printf("Welcome %s %s\n\n", users[i].getName(), users[i].getSurname());
 
 
-
-                        while (true) {
-                            String choise = "1.Update changes\n2.Exit\n\n" +
-                                    "Please choose 1 or 2!";
-                            System.out.println(choise);
-                            input = new Scanner(System.in).nextLine();
-                            if (input.equalsIgnoreCase("Update") || input.equals("1")) {
-                                System.out.println("New Username: ");
-                                username = sc.next();
-                                System.out.println("New Password: ");
-                                password = sc.next();
-
-                                User newUser = new User();
-                                newUser.setUsername(sc.nextLine());
-                                newUser.setPassword(sc.nextLine());
-                                //UserRepository.addUser(newUser);
-
-                                System.out.println("Username and password changed successfully");
+                            while (true) {
+                                String choise = "1.Update changes\n2.Delete\n3.Exit\n\n" +
+                                        "Please choose one !";
+                                System.out.println(choise);
+                                String ch = new Scanner(System.in).next();
+                                //input = new Scanner(System.in).nextLine();
+                                if (ch.equalsIgnoreCase("Update") || ch.equals("1")) {
+                                    System.out.println("New Username: ");
+                                    String newUsername = sc.next();
+                                    System.out.println("New Password: ");
+                                    String newPassword = sc.next();
+                                    users[i].setUsername(newUsername);
+                                    users[i].setPassword(newPassword);
+                                    UserRepository.update(users[i], i);
 
 
-                            } else if (input.equalsIgnoreCase("Exit") || input.equals("2")) {
-                                System.out.println("You exit successfully!");
-                                return;
+                                    //UserRepository.addUser(newUser);
+
+                                    System.out.println("Username and password changed successfully");
+
+
+                                }
+
+                               // else if (ch.equalsIgnoreCase("Delete") || ch.equals("2")){
+                                 //   UserRepository.delete(users[i]);
+                                //}
+
+                                else if (ch.equalsIgnoreCase("Exit") || ch.equals("3")) {
+                                    System.out.println("You exit successfully!");
+                                    break;
+                                }
+                                else {
+                                    System.out.println("Wrong choises");
+                                }
+
+
                             }
-
-
                         }
+                        if (!choises) {
+                            System.out.println("Wrong username and password");
+                        }
+
                     }
 
                 }
 
-            }
-            System.out.println("Wrong username and password");
-        } else if (input.equalsIgnoreCase("sign up") || input.equals("2")) {
-            System.out.print("name: ");
-            String name = sc.next();
-            System.out.print("surname: ");
-            String surname = sc.next();
-            System.out.print("username: ");
-            String username = sc.next();
-            System.out.print("password: ");
-            String password = sc.next();
-            System.out.print("age: ");
-            short age = sc.nextShort();
+            } else if (input.equalsIgnoreCase("sign up") || input.equals("2")) {
+                System.out.print("name: ");
+                String name = sc.next();
+                System.out.print("surname: ");
+                String surname = sc.next();
+                System.out.print("username: ");
+                String username = sc.next();
+                System.out.print("password: ");
+                String password = sc.next();
+                System.out.print("age: ");
+                short age = sc.nextShort();
 
-            User user = new User(name, surname, username, password, age);
-            UserRepository.addUser(user);
-        } else if (input.equals("3") || input.equalsIgnoreCase("exit")) {
-            System.out.println("You exit successfully!");
-            break;
-        } else {
-            System.out.println("Wrong input!Please try again");
+                User user = new User(name, surname, username, password, age);
+                UserRepository.addUser(user);
+            } else if (input.equals("3") || input.equalsIgnoreCase("exit")) {
+                System.out.println("You exit successfully!");
+                break;
+            } else {
+                System.out.println("Wrong input!Please try again");
+            }
+
         }
 
     }
-
 }
-        }
