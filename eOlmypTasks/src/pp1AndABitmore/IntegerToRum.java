@@ -11,12 +11,12 @@ public class IntegerToRum {
 
     }
 
-
     public static String toRum(int i) {
         int digits = i % 10;
         int tens = (i % 100) / 10;
         int hundreds = (i % 1000) / 100;
         int thousands = i / 1000;
+
 
         return (romanDigit(thousands, "M", "MM ", "MMM ") +
                 romanDigit(hundreds, "C", "D", "M") +
@@ -25,10 +25,12 @@ public class IntegerToRum {
     }
 
     public static String romanDigit(int i, String first, String second, String third) {
+
         String result = "";
         if (i == 0) {
             System.out.print("");
-        } else {
+        }
+        else {
             if ((i >= 4) && (i <= 8)) {
                 return second;
             }
@@ -37,6 +39,7 @@ public class IntegerToRum {
             }
             if (i < 4) {
                 return first;
+
 
             }
         }
