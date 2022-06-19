@@ -32,18 +32,18 @@ public class IntegerToRum {
         }
         else {
             if ((i >= 4) && (i <= 8)) {
-                return second;
+                result+= second;
             }
             if (i == 9) {
-                return third;
+                result+= third;
             }
             if (i < 4) {
-                return first;
+                result+= first;
 
 
             }
         }
 
-        return result;
+        return result + third;
     }
 }

@@ -20,22 +20,10 @@ public class Pyramid {
                 System.out.print(" ");
             }
             for (int j = 0; j < countnumber; j++) {
-                System.out.print(i);
+                System.out.printf("%-3s",i);
             }
             for (int j = 0; j < countSpace; j++) {
                 System.out.print("");
-            }
-            for (int j = 0; j < countSpace; j++) {
-                System.out.print("");
-            }
-            for (int j = 0; j < countSpace; j++) {
-                System.out.print("");
-            }
-            for (int j = 0; j < countnumber; j++) {
-                System.out.print(i);
-            }
-            for (int j = 0; j < countSpace; j++) {
-                System.out.print(" ");
             }
 
 
