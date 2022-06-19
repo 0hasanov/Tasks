@@ -28,16 +28,15 @@ public class IntegerToRum {
         String result = "";
         if (i == 0) {
             System.out.print("");
-        }
-        else {
+        } else {
             if ((i >= 4) && (i <= 8)) {
-                result = second + result;
+                return second;
             }
             if (i == 9) {
-                result = third + result;
+                return third;
             }
             if (i < 4) {
-                result = first + result;
+                return first;
 
             }
         }
