@@ -2,7 +2,7 @@ package pp1AndABitmore;
 
 import java.util.Scanner;
 
-public class Rum {
+public class RumToInteger {
 
 
     public static int rumToInt(String rum) {
