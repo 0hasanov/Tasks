@@ -7,7 +7,7 @@ public class CalculatorWithSwitch {
         Scanner sc = new Scanner(System.in);
 
         int number1 = sc.nextInt();
-        char ch = sc.next().charAt(0); // ?
+        char ch = sc.next().charAt(0);
         int number2 = sc.nextInt();
         switch (ch) {
             case '+': {
