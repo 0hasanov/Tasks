@@ -32,10 +32,15 @@ public class PhoneNumber {
         phonekeys.put("x", "99");
         phonekeys.put("y", "999");
         phonekeys.put("z", "9999");
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the phone number: ");
-        String str = sc.next();
 
+
+    }
+}
+
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Please enter the phone number: ");
+//        String str = sc.next();
 //        switch (str) {
 //            case "2":
 //                System.out.println("a");
@@ -115,6 +120,4 @@ public class PhoneNumber {
 //
 //
 //        }
-    }
-}
 
