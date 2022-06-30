@@ -1,6 +1,9 @@
 package collections.two;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class DublicateMap {
     public static void main(String[] args) {
@@ -22,11 +25,11 @@ public class DublicateMap {
         }
 
 
-        Map<Integer, Integer> count = new HashMap<>();
+        HashMap<Integer, Integer> count = new HashMap<>();
 
 
         for (Integer names : numbers) {
-            count.put(names, count.getOrDefault(names, 0)+1);
+            count.put(names, count.getOrDefault(names, 0) + 1);
         }
 
 
