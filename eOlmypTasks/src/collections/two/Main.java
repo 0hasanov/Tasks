@@ -38,12 +38,9 @@ public class Main {
         User artist = new User("Emil", "Hasanov", 4);
 
 
-
         employer.add(artist);
         System.out.println(employer);
 
-
-        System.out.println("Delete same ");
 
 //        if (coder.getName() == teacher.getName() || coder.getSurname() == teacher.getSurname()) {
 //            user1.clear();
