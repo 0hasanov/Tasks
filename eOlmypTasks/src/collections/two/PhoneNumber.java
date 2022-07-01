@@ -1,104 +1,22 @@
 package collections.two;
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class PhoneNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the phone number: ");
-//        int str = sc.nextInt();
-//
-//
-//        switch (str) {
-//            case 2:
-//                System.out.println("a");
-//                break;
-//            case 22:
-//                System.out.println("b");
-//                break;
-//            case 222:
-//                System.out.println("c");
-//                break;
-//            case 3:
-//                System.out.println("d");
-//                break;
-//            case 33:
-//                System.out.println("e");
-//                break;
-//            case 333:
-//                System.out.println("f");
-//                break;
-//            case 4:
-//                System.out.println("g");
-//                break;
-//            case 44:
-//                System.out.println("h");
-//                break;
-//            case 444:
-//                System.out.println("i");
-//                break;
-//            case 5:
-//                System.out.println("j");
-//                break;
-//            case 55:
-//                System.out.println("k");
-//                break;
-//            case 555:
-//                System.out.println("l");
-//                break;
-//            case 6:
-//                System.out.println("m");
-//                break;
-//            case 66:
-//                System.out.println("n");
-//                break;
-//            case 666:
-//                System.out.println("o");
-//                break;
-//            case 7:
-//                System.out.println("p");
-//                break;
-//            case 77:
-//                System.out.println("q");
-//                break;
-//            case 777:
-//                System.out.println("r");
-//                break;
-//            case 7777:
-//                System.out.println("s");
-//                break;
-//            case 8:
-//                System.out.println("t");
-//                break;
-//            case 88:
-//                System.out.println("u");
-//                break;
-//            case 888:
-//                System.out.println("v");
-//                break;
-//            case 9:
-//                System.out.println("w");
-//                break;
-//            case 99:
-//                System.out.println("x");
-//                break;
-//            case 999:
-//                System.out.println("y");
-//                break;
-//            case 9999:
-//                System.out.println("z");
-//
-//        }
+        System.out.println("Please enter the words : ");
         System.out.println(getDigits(sc.next()));
+        System.out.println("Please enter the digits");
+        System.out.println(getWords(sc.nextInt()));
 
     }
 
-    public static int getDigits(String test) {
+    public static int getDigits(String words) {
         String result = "";
-        String param = test.toUpperCase();
-        for (int i = 0; i < param.length(); i++) {
-            String s = Character.toString(param.charAt(i));
+
+        for (int i = 0; i < words.length(); i++) {
+            String s = Character.toString(words.charAt(i));
             if (s.equalsIgnoreCase("A")) {
                 result += 2;
             }
@@ -180,32 +98,90 @@ public class PhoneNumber {
         }
         return Integer.parseInt(result);
     }
-}
+    public static String getWords(int digits) {
+        digits = Math.abs(digits);
+        String result = "";
+        int d = 0;
+        for (int i = 0; i < digits; i++) {
+            d = Integer.parseInt(String.valueOf(Math.abs((int) Math.floor(digits / Math.pow(10, Math.floor(Math.log10(digits)))))));
+        }
+        if (d == 2){
+            result += "a";
+        }
+        else if (d == 22){
+            result += "b";
+        }
+        else if (d == 222){
+            result += "c";
+        }
+        else if (d == 3){
+            result += "d";
+        }
+        else if (d == 33){
+            result += "e";
+        }
+        else if (d == 333){
+            result += "f";
+        }
+        else if (d == 4){
+            result += "g";
+        }
+        else if (d == 44){
+            result += "h";
+        }
+        else if (d == 444){
+            result += "i";
+        }
+        else if (d == 5){
+            result += "j";
+        }
+        else if (d == 55){
+            result += "k";
+        }
+        else if (d == 555){
+            result += "l";
+        }
+        else if (d == 6){
+            result += "m";
+        }
+        else if (d == 66){
+            result += "n";
+        }
+        else if (d == 666){
+            result += "o";
+        }
+        else if (d == 7){
+            result += "p";
+        }
+        else if (d == 77){
+            result += "q";
+        }
+        else if (d == 777){
+            result += "r";
+        }
+        else if (d == 7777){
+            result += "s";
+        }
+        else if (d == 8){
+            result += "t";
+        }
+        else if (d == 88){
+            result += "u";
+        }else if (d == 888){
+            result += "v";
+        }
+        else if (d == 9){
+            result += "w";
+        }
+        else if (d == 99){
+            result += "x";
+        }else if (d == 999){
+            result += "y";
+        }
+        else if (d == 9999){
+            result += "z";
+        }
 
-//        HashMap phonekeys = new HashMap();
-//        phonekeys.put("a", "2");
-//        phonekeys.put("b", "22");
-//        phonekeys.put("c", "222");
-//        phonekeys.put("d", "3");
-//        phonekeys.put("e", "33");
-//        phonekeys.put("f", "333");
-//        phonekeys.put("g", "4");
-//        phonekeys.put("h", "44");
-//        phonekeys.put("i", "444");
-//        phonekeys.put("j", "5");
-//        phonekeys.put("k", "55");
-//        phonekeys.put("l", "555");
-//        phonekeys.put("m", "6");
-//        phonekeys.put("n", "66");
-//        phonekeys.put("o", "666");
-//        phonekeys.put("p", "7");
-//        phonekeys.put("q", "77");
-//        phonekeys.put("r", "777");
-//        phonekeys.put("s", "7777");
-//        phonekeys.put("t", "8");
-//        phonekeys.put("u", "88");
-//        phonekeys.put("v", "888");
-//        phonekeys.put("w", "9");
-//        phonekeys.put("x", "99");
-//        phonekeys.put("y", "999");
-//        phonekeys.put("z", "9999");
+        return result;
+    }
+}
