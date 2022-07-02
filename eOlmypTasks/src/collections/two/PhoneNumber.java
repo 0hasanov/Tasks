@@ -100,9 +100,10 @@ public class PhoneNumber {
     }
     public static String getWords(int digits) {
         digits = Math.abs(digits);
+        int digitsLength= String.valueOf(digits).length();
         String result = "";
         int d = 0;
-        for (int i = 0; i < digits; i++) {
+        for (int i = 0; i < digitsLength; i++) {
             d = Integer.parseInt(String.valueOf(Math.abs((int) Math.floor(digits / Math.pow(10, Math.floor(Math.log10(digits)))))));
         }
         if (d == 2){
