@@ -20,55 +20,80 @@ public class PhoneNumber {
             String s = Character.toString(words.charAt(i));
             if (s.equalsIgnoreCase("A")) {
                 result += 2;
-            } else if (s.equalsIgnoreCase("B")) {
+            }
+            else if (s.equalsIgnoreCase("B")) {
                 result += 22;
-            } else if (s.equalsIgnoreCase("C")) {
+            }
+            else if (s.equalsIgnoreCase("C")) {
                 result += 222;
-            } else if (s.equalsIgnoreCase("D")) {
+            }
+            else if (s.equalsIgnoreCase("D")) {
                 result += 3;
-            } else if (s.equalsIgnoreCase("E")) {
+            }
+            else if (s.equalsIgnoreCase("E")) {
                 result += 33;
-            } else if (s.equalsIgnoreCase("F")) {
+            }
+            else if (s.equalsIgnoreCase("F")) {
                 result += 333;
-            } else if (s.equalsIgnoreCase("G")) {
+            }
+            else if (s.equalsIgnoreCase("G")) {
                 result += 4;
-            } else if (s.equalsIgnoreCase("H")) {
+            }
+            else if (s.equalsIgnoreCase("H")) {
                 result += 44;
-            } else if (s.equalsIgnoreCase("I")) {
+            }
+            else if (s.equalsIgnoreCase("I")) {
                 result += 444;
-            } else if (s.equalsIgnoreCase("J")) {
+            }
+            else if (s.equalsIgnoreCase("J")) {
                 result += 5;
-            } else if (s.equalsIgnoreCase("K")) {
+            }
+            else if (s.equalsIgnoreCase("K")) {
                 result += 55;
-            } else if (s.equalsIgnoreCase("L")) {
+            }
+            else if (s.equalsIgnoreCase("L")) {
                 result += 555;
-            } else if (s.equalsIgnoreCase("M")) {
+            }
+            else if (s.equalsIgnoreCase("M")) {
                 result += 6;
-            } else if (s.equalsIgnoreCase("N")) {
+            }
+            else if (s.equalsIgnoreCase("N")) {
                 result += 66;
-            } else if (s.equalsIgnoreCase("O")) {
+            }
+            else if (s.equalsIgnoreCase("O")) {
                 result += 666;
-            } else if (s.equalsIgnoreCase("P")) {
+            }
+            else if (s.equalsIgnoreCase("P")) {
                 result += 7;
-            } else if (s.equalsIgnoreCase("Q")) {
+            }
+            else if (s.equalsIgnoreCase("Q")) {
                 result += 77;
-            } else if (s.equalsIgnoreCase("R")) {
+            }
+            else if (s.equalsIgnoreCase("R")) {
                 result += 777;
-            } else if (s.equalsIgnoreCase("S")) {
+            }
+            else if (s.equalsIgnoreCase("S")) {
                 result += 7777;
-            } else if (s.equalsIgnoreCase("T")) {
+            }
+            else if (s.equalsIgnoreCase("T")) {
                 result += 8;
-            } else if (s.equalsIgnoreCase("U")) {
+            }
+            else if (s.equalsIgnoreCase("U")) {
                 result += 88;
-            } else if (s.equalsIgnoreCase("V")) {
+            }
+            else if (s.equalsIgnoreCase("V")) {
                 result += 888;
-            } else if (s.equalsIgnoreCase("W")) {
+            }
+            else if (s.equalsIgnoreCase("W")) {
                 result += 9;
-            } else if (s.equalsIgnoreCase("X")) {
+            }
+            else if (s.equalsIgnoreCase("X")) {
                 result += 99;
-            } else if (s.equalsIgnoreCase("Y")) {
+            }
+            else if (s.equalsIgnoreCase("Y")) {
                 result += 999;
-            } else if (s.equalsIgnoreCase("Z")) {
+            }
+            else if (s.equalsIgnoreCase("Z")) {
                 result += 9999;
             }
         }
