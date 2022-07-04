@@ -5,14 +5,15 @@ import java.util.Scanner;
 public class PhoneNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the words: ");
+//       System.out.println("Please enter the words : ");
 //        System.out.println(getDigits(sc.next()));
-        System.out.println("Please enter the digits:");
-        System.out.println(getWords(sc.nextInt()));
+        System.out.println("Please enter the digits");
+        System.out.println(getWords(sc.nextLong()));
+
 
     }
 
-    public static int getDigits(String words) {
+    public static String getDigits(String words) {
         String result = "";
 
         for (int i = 0; i < words.length(); i++) {
@@ -96,91 +97,84 @@ public class PhoneNumber {
                 result += 9999;
             }
         }
-        return Integer.parseInt(result);
+        return result;
     }
-    public static String getWords(int digits) {
-        digits = Math.abs(digits);
+
+    public static String getWords(long digits) {
+//        digits = Math.abs(digits);
         String result = "";
-        int d = 0;
-        for (int i = 0; i < digits; i++) {
-            d = Integer.parseInt(String.valueOf(Math.abs((int) Math.floor(digits / Math.pow(10, Math.floor(Math.log10(digits)))))));
+        int d = 0, say = 1;
+        String s = String.valueOf(digits);
+        ///2223334455
+        s=s+" ";
+        StringBuilder ardcilTiklanma= new StringBuilder("");
+        for (int i = 0; i < s.length()-1 ; i++) {
+            if (s.charAt(i) == s.charAt(i + 1)) {
+                ardcilTiklanma.append(s.charAt(i ));
+            } else {//2225
+                ardcilTiklanma.append(s.charAt(i ));
+                d = Integer.parseInt(ardcilTiklanma.toString());
+                if (d == 2) {
+                    result += "a";
+                } else if (d == 22) {
+                    result += "b";
+                } else if (d == 222) {
+                    result += "c";
+                } else if (d == 3) {
+                    result += "d";
+                } else if (d == 33) {
+                    result += "e";
+                } else if (d == 333) {
+                    result += "f";
+                } else if (d == 4) {
+                    result += "g";
+                } else if (d == 44) {
+                    result += "h";
+                } else if (d == 444) {
+                    result += "i";
+                } else if (d == 5) {
+                    result += "j";
+                } else if (d == 55) {
+                    result += "k";
+                } else if (d == 555) {
+                    result += "l";
+                } else if (d == 6) {
+                    result += "m";
+                } else if (d == 66) {
+                    result += "n";
+                } else if (d == 666) {
+                    result += "o";
+                } else if (d == 7) {
+                    result += "p";
+                } else if (d == 77) {
+                    result += "q";
+                } else if (d == 777) {
+                    result += "r";
+                } else if (d == 7777) {
+                    result += "s";
+                } else if (d == 8) {
+                    result += "t";
+                } else if (d == 88) {
+                    result += "u";
+                } else if (d == 888) {
+                    result += "v";
+                } else if (d == 9) {
+                    result += "w";
+                } else if (d == 99) {
+                    result += "x";
+                } else if (d == 999) {
+                    result += "y";
+                } else if (d == 9999) {
+                    result += "z";
+                }
+                ardcilTiklanma.setLength(0);
+                d = 0;
+            }
+//            d = Integer.parseInt(String.valueOf(Math.abs((int) Math.floor(digits / Math.pow(10, Math.floor(Math.log10(digits)))))));
+
+
         }
-        if (d == 2){
-            result += "a";
-        }
-        else if (d == 22){
-            result += "b";
-        }
-        else if (d == 222){
-            result += "c";
-        }
-        else if (d == 3){
-            result += "d";
-        }
-        else if (d == 33){
-            result += "e";
-        }
-        else if (d == 333){
-            result += "f";
-        }
-        else if (d == 4){
-            result += "g";
-        }
-        else if (d == 44){
-            result += "h";
-        }
-        else if (d == 444){
-            result += "i";
-        }
-        else if (d == 5){
-            result += "j";
-        }
-        else if (d == 55){
-            result += "k";
-        }
-        else if (d == 555){
-            result += "l";
-        }
-        else if (d == 6){
-            result += "m";
-        }
-        else if (d == 66){
-            result += "n";
-        }
-        else if (d == 666){
-            result += "o";
-        }
-        else if (d == 7){
-            result += "p";
-        }
-        else if (d == 77){
-            result += "q";
-        }
-        else if (d == 777){
-            result += "r";
-        }
-        else if (d == 7777){
-            result += "s";
-        }
-        else if (d == 8){
-            result += "t";
-        }
-        else if (d == 88){
-            result += "u";
-        }else if (d == 888){
-            result += "v";
-        }
-        else if (d == 9){
-            result += "w";
-        }
-        else if (d == 99){
-            result += "x";
-        }else if (d == 999){
-            result += "y";
-        }
-        else if (d == 9999){
-            result += "z";
-        }
+
 
         return result;
     }
