@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class PhoneNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the words : ");
-        System.out.println(getDigits(sc.next()));
-        System.out.println("Please enter the digits");
+        System.out.println("Please enter the words: ");
+//        System.out.println(getDigits(sc.next()));
+        System.out.println("Please enter the digits:");
         System.out.println(getWords(sc.nextInt()));
 
     }

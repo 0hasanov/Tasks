@@ -1,10 +1,10 @@
-package collections;
+package collections.one;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class FindMinMaxAlqo {
+public class FindMinMax {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> number = new ArrayList<>();
@@ -13,37 +13,20 @@ public class FindMinMaxAlqo {
         number.add(sc.nextInt());
 
 
-        
-        FindMinMaxAlqo findMinMax = new FindMinMaxAlqo();
+        int max = Collections.max(number);
+        FindMinMax findMinMax = new FindMinMax();
         System.out.println("Minimum is : " + findMinMax.minMethode(number));
         System.out.println("Maximum is : " + findMinMax.maxMethode(number));
 
     }
 
     public int minMethode(ArrayList<Integer> receivedList) {
-
-        int min = receivedList.get(0);
-        for (int number : receivedList) {
-            if (number < min) {
-                min = number;
-
-            }
-        }
-        return min;
+        return Collections.min(receivedList);
 
     }
 
     public int maxMethode(ArrayList<Integer> receivedList) {
-
-
-        int max = receivedList.get(0);
-        for (int number : receivedList) {
-            if (number > max) {
-                max = number;
-
-            }
-        }
-        return max;
+        return Collections.max(receivedList);
     }
 
 }
