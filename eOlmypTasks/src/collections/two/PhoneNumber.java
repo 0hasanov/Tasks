@@ -105,7 +105,7 @@ public class PhoneNumber {
         String result = "";
         int d = 0, say = 1;
         String s = String.valueOf(digits);
-        ///2223334455
+        //2223334455
         s=s+" ";
         StringBuilder ardcilTiklanma= new StringBuilder("");
         for (int i = 0; i < s.length()-1 ; i++) {
