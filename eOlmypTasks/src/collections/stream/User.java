@@ -4,12 +4,12 @@ import java.util.Objects;
 
 public class User {
     private String mail;
-    private int password;
+    private String password;
 
     public User() {
     }
 
-    public User(String mail, int password) {
+    public User(String mail, String password) {
         this.mail = mail;
         this.password = password;
     }
@@ -22,11 +22,11 @@ public class User {
         this.mail = mail;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 
