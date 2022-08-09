@@ -1,0 +1,34 @@
+create table Company
+(
+    id int primary key,
+    name  varchar(255) not null,
+    created date default now()
+);
+
+create table myEmployer
+(
+    id         int primary key,
+    name       varchar(255),
+    surname    varchar(255),
+    age        numeric(10),
+    title      varchar(255),
+    company_id int,
+    FOREIGN KEY (company_id) REFERENCES company (id)
+
+);
+
+INSERT into company
+values (2, 'Coders');
+INSERT into company (id, name)
+values (1, 'Emil');
+UPDATE company
+SET name = 'Azercell'
+where id = 1;
+ALTER TABLE company
+    add unique (name);
+
+
+insert into myemployer (id, name, surname, age, title, company_id)
+values (1, 'Emil', 'Hasanov', 20, 'programist', 1);
+insert into myemployer (id, name, surname, age, title, company_id)
+values (2, 'Ayaz', 'Baxalov', 21, 'painter', 1);
