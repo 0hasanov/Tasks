@@ -27,19 +27,17 @@ public class CountWord {
 
                 String[] words = line.split(" ");
                 for (String soz : words) {
-                 if (tekrar.containsKey(soz)){
-                     Integer say = tekrar.get(soz);
-                     tekrar.put(soz,++say);
-                 }
-                 else {
-                     tekrar.put(soz,1);
-                 }
+                    if (tekrar.containsKey(soz)) {
+                        Integer say = tekrar.get(soz);
+                        tekrar.put(soz, ++say);
+                    } else {
+                        tekrar.put(soz, 1);
+                    }
 
 
                 }
                 count = count + words.length;
                 System.out.println("Number of words : " + count);
-
 
             }
             System.out.println(tekrar);
