@@ -119,7 +119,7 @@ public class PhoneNumber {
                 } else if (d == 22) {
                     result += "b";
                 } else if (d == 222) {
-                    result += "c";
+                    result += "builder";
                 } else if (d == 3) {
                     result += "d";
                 } else if (d == 33) {

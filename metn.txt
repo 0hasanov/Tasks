@@ -1,0 +1,4 @@
+Sun Microsystems tarafından geliştirilmiş olan Java ilk kez 1995 yılında piyasaya sunuldu.
+Java geniş kullanım alanına sahip, sınıf tabanlı, nesne yönelimli olarak tanımlanan bir programlama dilidir. 
+Java aynı zamanda uygulama geliştirme ve çalıştırma çalışmaları yapılan bir bilgi işlem platformudur. 
+Java ayrıca son kullanıcının ücretsiz olarak indirerek kullanabileceği bir uygulama çalıştırma yazılımıdır. 
