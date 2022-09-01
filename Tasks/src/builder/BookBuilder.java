@@ -20,6 +20,10 @@ public class BookBuilder {
         return this;
     }
 
+    public static BookBuilder bookBuilder(){
+        return new BookBuilder();
+    }
+
     public Books getBooks(){
         return new Books(name,author,price);
     }
