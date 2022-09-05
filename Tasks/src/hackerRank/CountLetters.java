@@ -14,7 +14,7 @@ public class CountLetters {
                 uppercase++;
             } else if (result >= 'a' && result <= 'z') {
                 lowercase++;
-            } else if (result >= 0 && result <= 9) {
+            } else if (result >= 0 && result <= 9) { //islemir
                 number++;
             } else {
                 specialwords++;
