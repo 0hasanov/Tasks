@@ -9,8 +9,8 @@ public class CalculatingAngle2 {
     public static void main(String[] args) {
 //        LocalDateTime localDateTime = LocalDateTime.now();
         int hour, minute;
-        Scanner tr = new Scanner(System.in);
-        String saatStr = tr.next();
+        Scanner sc = new Scanner(System.in);
+        String saatStr = sc.next();
         LocalTime saat = LocalTime.parse(saatStr, DateTimeFormatter.ofPattern("HH:mm"));
         hour = saat.getHour();
 //        System.out.println("Hour: " + hour);
