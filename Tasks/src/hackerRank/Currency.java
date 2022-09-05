@@ -17,15 +17,19 @@ public class Currency {
         NumberFormat india = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
         NumberFormat china = NumberFormat.getCurrencyInstance(Locale.CHINA);
         NumberFormat france = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+        NumberFormat azerbaijan = NumberFormat.getCurrencyInstance(new Locale("az","az"));
+
         String moneyStringUS = us.format(number);
         String moneyStringINDIA = india.format(number);
         String moneyStringCHINA = china.format(number);
         String moneyStringFRANCE = france.format(number);
-        System.out.println("US: " + moneyStringUS);
+        String moneyStringAZERBAIJAN = azerbaijan.format(number);
 
+        System.out.println("US: " + moneyStringUS);
         System.out.println("INDIA: " + moneyStringINDIA);
         System.out.println("CHINA: " + moneyStringCHINA);
         System.out.println("FRANCE: " + moneyStringFRANCE);
+        System.out.println("AZERBAIJAN: " + moneyStringAZERBAIJAN);
 
 
     }
