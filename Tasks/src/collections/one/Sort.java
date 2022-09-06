@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Sort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        List<Integer> numbers = new ArrayList<Integer>();
+        List<Integer> numbers = new ArrayList<>();
         numbers.add(sc.nextInt());
         numbers.add(sc.nextInt());
         numbers.add(sc.nextInt());
