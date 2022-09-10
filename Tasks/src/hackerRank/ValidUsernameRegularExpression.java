@@ -1,8 +1,6 @@
 package hackerRank;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class ValidUsernameRegularExpression {
     public static void main(String[] args) {
@@ -20,6 +18,7 @@ public class ValidUsernameRegularExpression {
     }
 
 }
- class UsernameValidator {
+
+class UsernameValidator {
     public static final String regularExpression = "^[a-zA-Z][a-zA-Z0-9_]{7,29}$";
 }
