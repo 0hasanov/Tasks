@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class Size {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String input = "";
         while (true) {
             String menu = "1.Write size\n2.Exit\n" +
                     "Please choose one!";
             System.out.println(menu);
-            input = new Scanner(System.in).nextLine();
+            String input = new Scanner(System.in).nextLine();
             if (input.equalsIgnoreCase("write size") || input.equals("1")) {
                 System.out.println("Write size !");
                 int number = sc.nextInt();
@@ -34,7 +33,8 @@ public class Size {
                 }
 //                System.out.println("Size: " + size);
             } else if (input.equalsIgnoreCase("exit") || input.equalsIgnoreCase("2")) {
-
+                System.out.println("You exit succesfully!");
+                break;
             } else {
                 System.out.println("Wrong input!Please try again");
             }
