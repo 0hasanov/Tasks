@@ -19,3 +19,4 @@ public class JavaRegex {
     String pattern  = ip0To255 + "[.]" + ip0To255 + "[.]" + ip0To255 + "[.]" + ip0To255;
 }
 
+

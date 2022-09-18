@@ -1,0 +1,9 @@
+Count
+int n = Integer.parseInt(scan.nextLine());
+        while (n-- != 0)
+
+
+
+
+
+        lambda anonymous
