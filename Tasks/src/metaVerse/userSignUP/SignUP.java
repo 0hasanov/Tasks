@@ -1,5 +1,7 @@
 package metaVerse.userSignUP;
 
+import metaVerse.Main;
+
 import java.util.Scanner;
 
 public class SignUP {
@@ -27,7 +29,8 @@ public class SignUP {
                     } else if (users[i] != null) {
                         if (users[i].getUsername().equals(username) && users[i].getPassword().equals(password)) {
                             choises = true;
-                            System.out.println("You entered succesfully!");
+                            System.out.printf("%s %s entered succesfully!\n", users[i].getName(), users[i].getPassword());
+                            //main method ise dussun
                         } else if (!choises) {
                             System.out.println("Wrong username and password");
                         }
@@ -50,6 +53,7 @@ public class SignUP {
             } else if (input.equals("3") || input.equalsIgnoreCase("exit")) {
                 System.out.println("You exit successfully!");
                 break;
+                //main method ise dusmesin
             } else {
                 System.out.println("Wrong input!Please try again");
             }

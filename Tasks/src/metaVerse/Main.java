@@ -10,18 +10,12 @@ import java.util.Scanner;
 
 
 public class Main {
-    //add username password +
-    //add map key username value add ettigi item
-    //break method yaratmaq
-    // tapmaq thread uygun task
-
     public static void main(String[] args) {
         SignUP.run();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to MetaVerse!");
         while (true) {
             System.out.println("Please choose one of them: \n1.T-Shirts\n2.Shoes\n3.Exit");
-
             String customer = sc.nextLine();
             int customers;
             if (customer.equalsIgnoreCase("T-shirts") || customer.equals("1")) {
