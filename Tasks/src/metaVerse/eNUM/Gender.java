@@ -1,4 +1,4 @@
-package metaVerse;
+package metaVerse.eNUM;
 
 public enum Gender {
     MALE,

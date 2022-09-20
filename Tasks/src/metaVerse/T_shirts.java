@@ -1,5 +1,8 @@
 package metaVerse;
 
+import metaVerse.eNUM.Gender;
+import metaVerse.eNUM.Starred_Products;
+
 public class T_shirts {
     private Gender gender;
     private String brand;

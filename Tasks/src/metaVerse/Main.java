@@ -1,12 +1,22 @@
 package metaVerse;
 
+import metaVerse.eNUM.Gender;
+import metaVerse.eNUM.Starred_Products;
+import metaVerse.userSignUP.SignUP;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 
 public class Main {
+    //add username password +
+    //add map key username value add ettigi item
+    //break method yaratmaq
+    // tapmaq thread uygun task
+
     public static void main(String[] args) {
+        SignUP.run();
         Scanner sc = new Scanner(System.in);
         System.out.println("Welcome to MetaVerse!");
         while (true) {
@@ -64,10 +74,11 @@ public class Main {
                     } else if (customer.equalsIgnoreCase("10")) {
                         System.out.println(tShirts10 + " was added!");
                     }
-
-
                 }
-                break;
+                System.out.println("------------------------------------------------------------------------------------------------------" + "\nContinue Shopping?\nYes?\nNo?");
+                if (!sc.nextLine().equalsIgnoreCase("Yes") || !sc.nextLine().equalsIgnoreCase("1")) {
+                    break;
+                }
 
             } else if (customer.equalsIgnoreCase("Shoes") || customer.equals("2")) {
                 List<Shoe> shoeList = new ArrayList<>();
@@ -120,13 +131,24 @@ public class Main {
                         System.out.println(shoe10 + " was added!");
                     }
                 }
-                break;
+
+
             } else if (customer.equalsIgnoreCase("Exit") || customer.equals("3")) {
                 System.out.println("You exit succesfully!");
-                break;
+
             } else {
                 System.out.println("Wrong input!");
             }
         }
     }
+
+//    public static void methodBreak() {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Do you Continue?\nYes?\nNo?");
+//        String answer = sc.nextLine();
+//        if (!answer.equalsIgnoreCase("Yes")) {
+//            System.out.println("ok");
+//        }
+//
+//    }
 }
