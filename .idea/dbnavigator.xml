@@ -29,7 +29,27 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="154d7895-a0c7-4154-abad-c2f951f32909">
-      <console name="MyTasks" type="STANDARD" schema="MyTasks" session="Main"><![CDATA[create table Company
+      <console name="MetaVerse" type="STANDARD" schema="information_schema" session="Main"><![CDATA[create table Tshirt
+(
+id int primary key,
+gender  varchar(255) not null,
+brand  varchar(255) not null,
+body  varchar(255) not null,
+colour  varchar(255) not null,
+price int ,
+created date default now()
+);
+
+create table Shoes
+(
+gender  varchar(255) not null,
+brand  varchar(255) not null,
+size  varchar(255) not null,
+colour  varchar(255) not null,
+price int ,
+created date default now()
+);]]></console>
+      <console name="MyTasks" type="STANDARD" schema="MetaVerse" session="Main"><![CDATA[create table Company
 (
     id int primary key,
     name  varchar(255) not null,
@@ -44,18 +64,18 @@ create table myEmployer
     age        numeric(10),
     title      varchar(255),
     company_id int,
-    FOREIGN KEY (company_id) REFERENCES company (id)
+    foreıgn key (company_id) references company (id)
 
 );
 
-INSERT into company
+ınsert into company
 values (2, 'Coders');
-INSERT into company (id, name)
+ınsert into company (id, name)
 values (1, 'Emil');
-UPDATE company
-SET name = 'Azercell'
+update company
+set name = 'Azercell'
 where id = 1;
-ALTER TABLE company
+alter TABLE company
     add unique (name);
 
 
@@ -69,7 +89,9 @@ values (2, 'Ayaz', 'Baxalov', 21, 'painter', 1);]]></console>
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="154d7895-a0c7-4154-abad-c2f951f32909" />
+    <connection id="154d7895-a0c7-4154-abad-c2f951f32909">
+      <session name="Session 1" id="f916e656-49ce-43bc-a1af-5914bbee6858" />
+    </connection>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="154d7895-a0c7-4154-abad-c2f951f32909" dataset="MyTasks.employerwas" active-filter-id="" />
@@ -82,6 +104,9 @@ values (2, 'Ayaz', 'Baxalov', 21, 'painter', 1);]]></console>
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/Tasks/src/sql/MetaVerse.sql" connection-id="154d7895-a0c7-4154-abad-c2f951f32909" session-id="MAIN" current-schema="information_schema" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -102,7 +127,9 @@ values (2, 'Ayaz', 'Baxalov', 21, 'painter', 1);]]></console>
     <diagnostics-history />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+    <recently-used-interfaces>
+      <mapping database-type="POSTGRES" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
