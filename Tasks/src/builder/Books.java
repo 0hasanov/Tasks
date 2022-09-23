@@ -7,7 +7,6 @@ public class Books {
 
 
     public Books(String name, String author, int price) {
-
         this.name = name;
         this.author = author;
         this.price = price;

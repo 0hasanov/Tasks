@@ -4,6 +4,7 @@ import metaVerse.eNUM.Gender;
 import metaVerse.eNUM.Starred_Products;
 
 public class Shoe {
+    private Integer id;
     private Gender gender;
     private String brand;
     private String size;
@@ -22,6 +23,17 @@ public class Shoe {
         this.price = price;
         this.starred_products = starred_products;
     }
+
+    public Shoe(Gender gender, String brand, String size, String colour, int price , int id) {
+        this.gender = gender;
+        this.brand = brand;
+        this.size = size;
+        this.colour = colour;
+        this.price = price;
+        this.id= id;
+    }
+
+
 
     public Gender getGender() {
         return gender;
@@ -71,10 +83,19 @@ public class Shoe {
         this.starred_products = starred_products;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Shoe{" +
-                "gender=" + gender +
+                "id=" + id +
+                ", gender=" + gender +
                 ", brand='" + brand + '\'' +
                 ", size='" + size + '\'' +
                 ", colour='" + colour + '\'' +
