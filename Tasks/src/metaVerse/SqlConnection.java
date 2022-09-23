@@ -11,18 +11,18 @@ import java.util.function.Consumer;
 import metaVerse.eNUM.Gender;
 
 public class SqlConnection {
-    public static void main(String[] args) {
-        SqlConnection sqlConnection = new SqlConnection();
-        List<Shoe> shoeList =sqlConnection.getAllShoes();
-        shoeList.forEach(System.out::println);
-        boolean b = sqlConnection.deleteShoesById(shoeList.get(0).getId());
-        if(b){
-            System.out.println("silindi");
-        }else System.out.println("silinmedi");
-        List<Shoe> shoeListAfterUpdate =sqlConnection.getAllShoes();
-        shoeListAfterUpdate.forEach(System.out::println);
-
-    }
+//    public static void main(String[] args) {
+//        SqlConnection sqlConnection = new SqlConnection();
+//        List<Shoe> shoeList =sqlConnection.getAllShoes();
+//        shoeList.forEach(System.out::println);
+//        boolean b = sqlConnection.deleteShoesById(shoeList.get(0).getId());
+//        if(b){
+//            System.out.println("silindi");
+//        }else System.out.println("silinmedi");
+//        List<Shoe> shoeListAfterUpdate =sqlConnection.getAllShoes();
+//        shoeListAfterUpdate.forEach(System.out::println);
+//
+//    }
 
     boolean addShoes(Shoe shoe) {
         boolean result=false;
@@ -48,7 +48,7 @@ public class SqlConnection {
         Connection connection = null;
         try {
             List<Shoe> shoeList = new ArrayList<>();
-            String sql = "SELECT  gender, brand, size, colour, price, id FROM nese.shoes where status=1";
+            String sql = "SELECT  gender, brand, size, colour, price, id FROM nese.shoes";
             connection = DBConfig.getConnection();
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             ResultSet rs = preparedStatement.executeQuery();
