@@ -1,0 +1,26 @@
+HELP.md
+build/
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+bin
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+
+.idea
+*.iws
+*.iml
+*.ipr
+*.xml
+*.DS_Store
+out/
+
+
